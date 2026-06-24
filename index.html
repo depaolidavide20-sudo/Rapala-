@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rapalà — cucina ligure e mediterranea nel cuore di Rapallo. Tradizione, pescato del territorio e ospitalità autentica."
+    />
+    <meta name="theme-color" content="#0a120f" />
+    <title>Rapalà | Ristorante a Rapallo</title>
+    <link rel="icon" href="assets/brand/rapala-logo-gold.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="site.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Rapalà, torna all'inizio">
+        <img src="assets/brand/rapala-logo-gold.png" alt="Rapalà" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigazione principale">
+        <a href="#ristorante" data-i18n="nav.restaurant">Ristorante</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#recensioni" data-i18n="nav.reviews">Recensioni</a>
+        <a href="#contatti" data-i18n="nav.contacts">Contatti</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Seleziona lingua">
+          <button class="is-active" type="button" data-lang="it" aria-pressed="true">ITA</button>
+          <span>/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="book-link" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo" data-i18n="cta.book">
+          Prenota
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <button class="menu-backdrop" type="button" aria-label="Chiudi il menu" data-menu-close></button>
+      <div class="menu-panel">
+        <p class="menu-panel-kicker">Rapalà · Rapallo</p>
+        <nav aria-label="Navigazione mobile">
+          <a href="#ristorante" data-i18n-html="mobile.restaurant"><span>01</span> Ristorante <i>↘</i></a>
+          <a href="#location" data-i18n-html="mobile.location"><span>02</span> Location <i>↘</i></a>
+          <a href="#recensioni" data-i18n-html="mobile.reviews"><span>03</span> Recensioni <i>↘</i></a>
+          <a href="#contatti" data-i18n-html="mobile.contacts"><span>04</span> Contatti <i>↘</i></a>
+        </nav>
+        <a class="menu-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+          <span data-i18n="cta.bookTable">Prenota un tavolo</span><i>↗</i>
+        </a>
+        <div class="mobile-menu-meta">
+          <p>Piazza del Pozzo 29<br />16035 Rapallo, GE</p>
+          <div>
+            <a href="tel:+3901851771965">+39 0185 177 1965</a>
+            <a href="https://www.instagram.com/ristoranterapala/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Rapalà, ristorante a Rapallo">
+        <img class="hero-image" src="assets/venue/sala-50.jpg" alt="Il dehors del ristorante Rapalà a Rapallo" />
+        <div class="hero-shade"></div>
+
+        <div class="hero-title-wrap">
+          <p class="hero-overline" data-i18n="hero.overline">Ristorante a Rapallo</p>
+          <h1>Rapala'</h1>
+          <div class="hero-address">
+            <p>Piazza del Pozzo 29</p>
+            <p>16035 Rapallo · GE</p>
+          </div>
+          <p class="hero-hours" data-i18n-html="hero.hours"><span>Lunch &amp; dinner</span> Tutti i giorni · 12–14 / 19–22</p>
+        </div>
+
+        <div class="hero-edge hero-edge-left" data-i18n="hero.edge">Cucina ligure &amp; mediterranea</div>
+        <div class="hero-edge hero-edge-right">44.3498° N · 9.2309° E</div>
+
+        <a class="scroll-cue" href="#ristorante">
+          <span data-i18n="hero.discover">Scopri Rapalà</span>
+          <i aria-hidden="true"></i>
+        </a>
+
+        <a
+          class="hero-instagram"
+          href="https://www.instagram.com/ristoranterapala/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Segui Rapalà su Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.5" cy="6.7" r="0.8" class="instagram-dot"></circle>
+          </svg>
+          <span>@ristoranterapala</span>
+        </a>
+      </section>
+
+      <section class="restaurant-section section-dark" id="ristorante">
+        <div class="section-heading reveal">
+          <p class="section-kicker" data-i18n="restaurant.kicker">01 · La nostra cucina</p>
+          <h2 data-i18n="nav.restaurant">Ristorante</h2>
+          <div class="heading-copy">
+            <p data-i18n="restaurant.copy1">
+              Tradizione ligure e mediterranea, materie prime riconoscibili e uno sguardo contemporaneo.
+            </p>
+            <p data-i18n="restaurant.copy2">Ogni piatto nasce per essere assaporato con gli occhi, con la bocca e con il cuore.</p>
+          </div>
+        </div>
+
+        <div class="food-carousel reveal reveal-delay">
+          <div class="food-track" data-food-track tabindex="0" aria-label="Carosello dei piatti di Rapalà">
+            <figure class="food-card">
+              <img src="assets/dishes/dish-01.jpg" alt="Pasta fresca con salsa mediterranea" />
+              <figcaption><span>01</span><p data-i18n="food.gesture">Il gesto</p></figcaption>
+            </figure>
+            <figure class="food-card food-card-offset">
+              <img src="assets/dishes/dish-02.jpg" alt="Pescato con pomodorini, olive e basilico" loading="lazy" />
+              <figcaption><span>02</span><p data-i18n="food.catch">Il pescato</p></figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="assets/dishes/dish-03.jpg" alt="Composizione con formaggio fresco e crostini" loading="lazy" />
+              <figcaption><span>03</span><p data-i18n="food.ingredient">La materia</p></figcaption>
+            </figure>
+            <figure class="food-card food-card-offset">
+              <img src="assets/dishes/dish-04.jpg" alt="Piatto con verdure e salsa dorata" loading="lazy" />
+              <figcaption><span>04</span><p data-i18n="food.land">La terra</p></figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="assets/dishes/dish-05.jpg" alt="Pasta ripiena con cozze e crema mediterranea" loading="lazy" />
+              <figcaption><span>05</span><p data-i18n="food.encounter">L’incontro</p></figcaption>
+            </figure>
+            <figure class="food-card food-card-offset">
+              <img src="assets/dishes/dish-06.jpg" alt="Filetto di pesce su crema e salsa alle erbe" loading="lazy" />
+              <figcaption><span>06</span><p data-i18n="food.sea">Il mare</p></figcaption>
+            </figure>
+            <figure class="food-card">
+              <img src="assets/dishes/dish-07.jpg" alt="Un brindisi a tavola da Rapalà" loading="lazy" />
+              <figcaption><span>07</span><p data-i18n="food.convivia">La convivialità</p></figcaption>
+            </figure>
+            <figure class="food-card food-card-offset">
+              <img src="assets/dishes/dish-08.jpg" alt="Degustazione di pasta fresca a tavola" loading="lazy" />
+              <figcaption><span>08</span><p data-i18n="food.memory">Il ricordo</p></figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-footer">
+            <p><span data-food-current>01</span> / 08</p>
+            <div class="carousel-arrows">
+              <button type="button" data-food-prev aria-label="Piatto precedente">←</button>
+              <button type="button" data-food-next aria-label="Piatto successivo">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-cta reveal">
+          <a class="outline-button" href="#carta-menu" data-card-trigger="food">
+            <span data-i18n="cta.menu">Scopri il nostro menù</span> <span>↗</span>
+          </a>
+          <a class="outline-button" href="#carta-vini" data-card-trigger="wine">
+            <span data-i18n="cta.wine">Carta dei Vini</span> <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="location-section" id="location">
+        <div class="section-heading location-heading reveal">
+          <p class="section-kicker" data-i18n="location.kicker">02 · Nel cuore di Rapallo</p>
+          <h2 data-i18n="nav.location">Location</h2>
+          <div class="heading-copy">
+            <p data-i18n="location.copy1">Sale intime, dettagli d’autore e un dehors nascosto tra il verde del centro storico.</p>
+            <p data-i18n="location.copy2">Un’atmosfera familiare, pensata per rendere speciale ogni tavolo.</p>
+          </div>
+        </div>
+
+        <div class="location-carousel reveal reveal-delay">
+          <div class="location-track" data-location-track tabindex="0" aria-label="Carosello degli ambienti di Rapalà">
+            <figure class="location-card">
+              <img src="assets/venue/dehors.jpg" alt="Il dehors raccolto e verde di Rapalà" loading="lazy" />
+              <figcaption><span>01</span><p data-i18n="location.garden">Il giardino nascosto</p></figcaption>
+            </figure>
+            <figure class="location-card">
+              <img src="assets/venue/sala-50.jpg" alt="La terrazza del ristorante Rapalà" loading="lazy" />
+              <figcaption><span>02</span><p data-i18n="location.terrace">La terrazza</p></figcaption>
+            </figure>
+            <figure class="location-card">
+              <img src="assets/venue/sala-60.jpg" alt="Una sala interna di Rapalà" loading="lazy" />
+              <figcaption><span>03</span><p data-i18n="location.rooms">Le sale</p></figcaption>
+            </figure>
+            <figure class="location-card">
+              <img src="assets/venue/sala-66.jpg" alt="La sala con la cantina di Rapalà" loading="lazy" />
+              <figcaption><span>04</span><p data-i18n="location.details">I dettagli</p></figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-footer carousel-footer-dark">
+            <p><span data-location-current>01</span> / 04</p>
+            <div class="carousel-arrows">
+              <button type="button" data-location-prev aria-label="Ambiente precedente">←</button>
+              <button type="button" data-location-next aria-label="Ambiente successivo">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="recensioni">
+        <div class="reviews-intro reveal">
+          <div>
+            <p class="section-kicker" data-i18n="reviews.kicker">03 · Dicono di noi</p>
+            <h2 data-i18n-html="reviews.title">Esperienze<br /><em>che restano.</em></h2>
+          </div>
+          <div class="rating-column">
+            <div class="review-awards" aria-label="Premi Tripadvisor Travellers' Choice 2023, 2024 e 2025">
+              <span data-i18n="reviews.awards">Travellers’ Choice</span>
+              <img src="assets/awards/tripadvisor-2025.webp" alt="Tripadvisor Travellers' Choice 2025" loading="lazy" />
+              <img src="assets/awards/tripadvisor-2024.gif" alt="Tripadvisor Travellers' Choice 2024" loading="lazy" />
+              <img src="assets/awards/tripadvisor-2023.gif" alt="Tripadvisor Travellers' Choice 2023" loading="lazy" />
+            </div>
+            <div class="rating-block">
+              <strong>9.5</strong>
+              <span>/ 10</span>
+              <p data-i18n-html="reviews.rating">825 recensioni verificate<br />su TheFork</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-grid reveal reveal-delay">
+          <article class="review-card">
+            <div class="stars" aria-label="5 stelle">★★★★★</div>
+            <blockquote data-i18n="reviews.quote1">
+              “Locale accogliente e curato nei dettagli, dove la gentilezza e il sorriso fanno subito la differenza.”
+            </blockquote>
+            <p data-i18n="reviews.author1">Michele M. · Ospite verificato</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 stelle">★★★★★</div>
+            <blockquote data-i18n="reviews.quote2">
+              “Una cucina che valorizza la materia prima: tonno, baccalà e dolci fatti in casa davvero memorabili.”
+            </blockquote>
+            <p data-i18n="reviews.author2">Recensione verificata · TheFork</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 stelle">★★★★★</div>
+            <blockquote data-i18n="reviews.quote3">
+              “Atmosfera vivace, servizio caloroso e piatti molto curati. Una bellissima scoperta nel cuore di Rapallo.”
+            </blockquote>
+            <p data-i18n="reviews.author3">Ospite internazionale · TheFork</p>
+          </article>
+        </div>
+
+        <div class="reviews-link reveal">
+          <a class="review-text-link" href="https://www.thefork.it/ristorante/rapala-r554429/recensioni" target="_blank" rel="noreferrer">
+            <span data-i18n="reviews.read">Leggi tutte le recensioni</span> <span>↗</span>
+          </a>
+          <a
+            class="review-cta"
+            href="https://www.google.com/search?sca_esv=5ded1eb12a838e6b&amp;rlz=1C5CHFA_enIT984IT984&amp;sxsrf=APpeQntxFztw_EVKsCOFfwsyLZvz26ZlgA:1782222441266&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_6ymHq80dotWzHXDcCeB7Ieeiey58epjChpbaAfXgXYtjvKuRfH8XxqgkeYmrGcw48IevHuY0PutpPgJTDvQ0lQdOQrx&amp;q=Rapal%C3%A0+Recensioni&amp;sa=X&amp;ved=2ahUKEwj7vZb8v52VAxVp_7sIHQmqC1IQ0bkNegQINhAI&amp;biw=811&amp;bih=704&amp;dpr=2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span data-i18n="reviews.leave">Lascia una recensione</span> <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contatti">
+        <div class="contact-panel reveal">
+          <p class="section-kicker" data-i18n="contacts.kicker">04 · Contatti</p>
+          <h2 data-i18n-html="contacts.title">Ci vediamo<br />a <em>Rapallo.</em></h2>
+
+          <div class="contact-list">
+            <div>
+              <h3 data-i18n="contacts.where">Dove siamo</h3>
+              <a href="https://goo.gl/maps/7UoNwCDxXxsdnScX6" target="_blank" rel="noreferrer">
+                Piazza del Pozzo 29<br />16035 Rapallo, GE ↗
+              </a>
+            </div>
+            <div>
+              <h3 data-i18n="contacts.hoursLabel">Orari</h3>
+              <p data-i18n-html="contacts.hours">Tutti i giorni<br />12–14 / 19–22</p>
+            </div>
+            <div>
+              <h3 data-i18n="contacts.phone">Telefono</h3>
+              <a href="tel:+3901851771965">+39 0185 177 1965</a>
+            </div>
+            <div>
+              <h3>Social</h3>
+              <a href="https://www.instagram.com/ristoranterapala/" target="_blank" rel="noreferrer">Instagram ↗</a>
+              <a href="https://www.facebook.com/ristoranterapala/" target="_blank" rel="noreferrer">Facebook ↗</a>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+              <span data-i18n="cta.bookTable">Prenota un tavolo</span> <span>↗</span>
+            </a>
+            <a class="contact-book contact-call" href="tel:+393886385005">
+              <span data-i18n="cta.call">Chiama ora</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.2 3.8 4.8 5.4c-.8.5-1.1 1.5-.8 2.4 1.8 5.7 6.3 10.2 12 12 .9.3 1.9 0 2.4-.8l1.6-2.4c.4-.6.3-1.4-.2-1.9l-2.7-2.1c-.5-.4-1.2-.4-1.7 0l-1.5 1.2a13.2 13.2 0 0 1-3.7-3.7l1.2-1.5c.4-.5.4-1.2 0-1.7L9.1 4c-.5-.5-1.3-.6-1.9-.2Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal reveal-delay">
+          <iframe
+            title="Mappa di Rapalà, Piazza del Pozzo 29 a Rapallo"
+            src="https://www.google.com/maps?q=Piazza%20del%20Pozzo%2029%2C%20Rapallo%2C%20GE&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-label" data-i18n="contacts.mapLabel">Nel centro storico · A due passi dal lungomare</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <img src="assets/brand/rapala-logo-gold.png" alt="Rapalà" />
+        <p data-i18n-html="footer.tagline">La Liguria nel piatto,<br />il cuore a tavola.</p>
+        <a href="#top" data-i18n="footer.top">Torna su ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year></span> Ristorante Rapalà · P. IVA 02633700998</p>
+        <p>Piazza del Pozzo 29 · Rapallo</p>
+      </div>
+    </footer>
+
+    <div class="card-modal" data-card-modal aria-hidden="true" hidden>
+      <section class="card-dialog" role="dialog" aria-modal="true" aria-labelledby="card-title">
+        <header class="card-header">
+          <img src="assets/brand/rapala-logo-gold.png" alt="Rapalà" />
+          <div class="card-tabs" role="tablist" aria-label="Seleziona la carta">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-card-tab="food" data-i18n="card.food">Menù</button>
+            <button type="button" role="tab" aria-selected="false" data-card-tab="wine" data-i18n="card.wine">Carta dei Vini</button>
+          </div>
+          <button class="card-close" type="button" aria-label="Chiudi la carta" data-card-close>
+            <span></span><span></span>
+          </button>
+        </header>
+
+        <div class="card-body">
+          <div class="card-intro">
+            <p class="section-kicker" data-card-kicker>Rapalà · Food experience</p>
+            <h2 id="card-title" data-card-title>Il nostro<br /><em>menù.</em></h2>
+            <p data-card-description>
+              Sapori liguri e mediterranei, proposte di mare e di terra. La carta segue il mercato e la stagione.
+            </p>
+          </div>
+          <div class="catalog" data-card-content></div>
+          <p class="catalog-note" data-i18n="card.note">
+            In caso di allergie o intolleranze, prima di ordinare informa il personale di sala. Pane fatto in casa e coperto € 3,00 a persona.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="booking-modal" data-booking-modal aria-hidden="true" hidden>
+      <button class="booking-backdrop" type="button" aria-label="Chiudi il form" data-booking-close></button>
+      <section class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+        <button class="booking-close" type="button" aria-label="Chiudi" data-booking-close>
+          <span></span><span></span>
+        </button>
+        <p class="section-kicker" data-i18n="form.kicker">Scrivici su WhatsApp</p>
+        <h2 id="booking-title" data-i18n-html="form.title">Raccontaci<br /><em>cosa desideri.</em></h2>
+        <p class="booking-intro" data-i18n="form.intro">
+          Compila i campi: prepareremo il messaggio e apriremo direttamente la chat con Rapalà.
+        </p>
+
+        <form data-whatsapp-form>
+          <input type="hidden" name="context" value="Prenotazione tavolo" />
+          <label>
+            <span data-i18n="form.name">Nome e cognome *</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <div class="form-row">
+            <label>
+              <span data-i18n="form.date">Data</span>
+              <input type="date" name="date" />
+            </label>
+            <label>
+              <span data-i18n="form.guests">Persone</span>
+              <select name="guests">
+                <option value="" data-i18n="form.choose">Scegli</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6+</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span data-i18n="form.message">Messaggio</span>
+            <textarea name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Orario, richieste o informazioni utili"></textarea>
+          </label>
+          <button class="whatsapp-submit" type="submit">
+            <span data-i18n="form.submit">Continua su WhatsApp</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z"></path>
+              <path d="M8.4 7.8c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.8 1.9c.1.3.1.5-.1.7l-.6.8c-.2.2-.2.4-.1.6.6 1.2 1.5 2.1 2.8 2.7.2.1.4.1.6-.1l.9-1.1c.2-.2.4-.3.7-.2l2 .9c.3.1.5.3.5.5 0 .2-.1 1.3-.7 1.8-.5.5-1.4.8-2.3.7-1-.1-2.5-.5-4.3-2.1-2.2-1.9-3.6-4.4-3.7-4.6-.1-.2-.9-1.2-.9-2.3 0-1.1.6-1.7.8-2Z"></path>
+            </svg>
+          </button>
+          <p class="form-note" data-i18n="form.note">Nessun dato viene salvato sul sito.</p>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
